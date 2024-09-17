@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Indie+Flower&family=Just+Another+Hand&family=Lato:wght@100;300;400&family=Nanum+Myeongjo&family=Pacifico&family=Pompiere&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Instagram</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        .old-menu h3{
+            font-weight: 400;
+            font-family: 'Gochi Hand', cursive;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Just Another Hand', cursive;
+            font-family: 'Lato', sans-serif;
+            font-family: 'Nanum Myeongjo', serif;
+            font-family: 'Pacifico', cursive;
+        }
+       /* .alldiv{
+        position: relative;
+       
+        background-size: 890px;
+        left: 300px;
+        top: 100px;
+    
+        background: url(mockup_samsung_galaxy_a12_2021_891372888b-removebg-preview.png) ;
+        background-repeat: no-repeat;
+        height: 100vh;
+       } */
+       .alldiv-two{
+        position: fixed;
+        border: 6px solid black;
+        border-top: 20px solid black;
+        border-bottom: 15px solid black;
+        position: relative;
+        top: 80px;
+        left: 600px;
+        height: 75vh;
+        width: 300px;
+        border-radius: 25px;
+
+       }
+       .container{
+	position: absolute;
+	top: 8%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+input, button{
+	border: none;
+	background: none;
+	outline: none;
+  padding: 0px;
+}
+
+button{
+	cursor: pointer;
+}
+
+.search-box{
+	display: flex;
+	background: #000;
+	border-radius: 50px;
+}
+
+.search-box-input{
+	width: 0px;
+	font-size: 14px;
+	color: #fff;
+	transition: .5s;
+}
+
+.search-box-btn{
+	display: flex;
+	border-radius: 50%;
+	width: 4em;
+	height: 4em;
+	background: white;
+	transition: .3s;
+}
+.fa-magnifying-glass{
+	margin: auto;
+	color: black;
+  font-weight: bold;
+}
+.search-box-input::placeholder{
+	color: white;
+	opacity: .7;
+}
+.search-box:hover .search-box-input{
+	padding-left: 2em;
+	padding-right: 1em;
+	width: 220px;
+}
+.search-box-btn:active{
+	transform: scale(.75);
+}
+.picture-one img, .picture-two img, .picture-three img{
+    
+    width: 93px;
+    height: 100px;
+}
+.picture-one, .picture-two, .picture-three {
+
+    position: relative;
+    top: 100px;
+}
+.footer{
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid black;
+    border-bottom:none ;
+    border-left:none ;
+    border-right:none ;
+    top: 160px;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.footer img{
+    width: 35px;
+}
+.footer i, img{
+    position: relative;
+    top: 10px;
+}
+      
+
+
+    </style>
+</head>
+<body>
+    <div class="alldiv animate__animated animate__slideInUp">
+       
+       <div class="alldiv-two">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" class="search-box-input" placeholder="Search . . .">
+                <button class="search-box-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+      </div>
+      <div class="picture-one">
+        <img src="search-img1.jpg" alt="">
+        <img src="search-img2.jpg" alt="">
+        <img src="search-img3.jpg" alt="">
+      </div>
+      <div class="picture-two">
+        <img src="search-img4.jpg" alt="">
+        <img src="search-img5.jpg" alt="">
+        <img src="search-img6.jpg" alt="">
+      </div>
+      <div class="picture-three">
+        <img src="search-img6.jpg" alt="">
+        <img src="search-img8.jpg" alt="">
+        <img src="search-img9.jpg" alt="">
+      </div>
+      <div class="footer">
+        <a href="http://127.0.0.1:5500/index.html" style="color: black;"> <i class="fa-solid fa-house"></i></a>
+        <a href="http://127.0.0.1:5500/search.html" style="color: black;"> <i class="fa-solid fa-magnifying-glass"></i></a>
+        <i class="fa-regular fa-square-plus"></i>
+        <i class="fa-solid fa-clapperboard"></i>
+        <img src="photo_2023-10-28_19-52-15-removebg-preview.png" alt="">
+    </div>
+       </div>
+    </div>
+</body>
+</html>

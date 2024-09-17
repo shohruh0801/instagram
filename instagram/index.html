@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Indie+Flower&family=Just+Another+Hand&family=Lato:wght@100;300;400&family=Nanum+Myeongjo&family=Pacifico&family=Pompiere&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Instagram</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        .old-menu h3{
+            font-weight: 400;
+            font-family: 'Gochi Hand', cursive;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Just Another Hand', cursive;
+            font-family: 'Lato', sans-serif;
+            font-family: 'Nanum Myeongjo', serif;
+            font-family: 'Pacifico', cursive;
+        }
+       /* .alldiv{
+        position: relative;
+       
+        background-size: 890px;
+        left: 300px;
+        top: 100px;
+    
+        background: url(mockup_samsung_galaxy_a12_2021_891372888b-removebg-preview.png) ;
+        background-repeat: no-repeat;
+        height: 100vh;
+       } */
+       .alldiv-two{
+        position: fixed;
+        border: 6px solid black;
+        border-top: 20px solid black;
+        border-bottom: 15px solid black;
+        position: relative;
+        top: 80px;
+        left: 600px;
+        height: 75vh;
+        width: 300px;
+        border-radius: 25px;
+
+       }
+       .old-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+       }
+       .old-menu i{
+        font-size: 20px;
+       }
+       .old-menu-top-left{
+        position: relative;
+        top: -5px;
+        padding-left: 10px;
+        padding-right: 10px;
+       }
+       #fa-heart{
+        padding-right: 10px;
+       }
+       .two-menu img{
+        position: relative;
+        top: -10px;
+        display: flex;
+        width: 58px;
+       }
+       .two-menu{
+        display: flex;
+       
+       }
+       .fa-heart:active{
+        color: red;
+
+       }
+       .fa-heart:hover{
+        -moz-background-inline-policy: red;
+       }
+       .dropbtn {
+  background:none;
+  position: relative;
+  top: -5px;
+  left: -10px;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+    position: relative;
+  top: 45px;
+    font-family: sans-serif;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.starlya{
+    display: flex;
+    font-size: 14px;
+}
+.starlya i{
+    font-size: 14px;
+}
+.peoply{
+    display: flex;
+    font-size: 14px;
+}
+.peoply i{
+    font-size: 16px;
+}
+.two-menu-text{
+    background-color: white;
+
+    height: 30px;
+    display:flex;
+    font-family: sans-serif;
+    position: relative;
+    top: -18px;
+    font-size: 11px;
+    padding-left: 5px;
+
+}
+.two-menu-text p{
+    position: relative;
+    top: 2px;
+}
+#pic1{
+    width: 289px;
+    height: 250px;
+}
+.poin-one{
+    color: black;
+}
+.post-disp{
+    display: flex;
+    justify-content: space-between;
+}
+.post-disp{
+    font-family: sans-serif;
+    font-size: 14px;
+    padding-left: 5px;
+}
+#user-1{
+    width: 30px;
+}
+.post-disp-one p{
+    position: relative;
+    top: -5px;
+    display: flex;
+    align-items: center;
+
+}
+.icons{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.all-post{
+    
+    border-radius: 0.5rem;
+    width: 18rem;
+    height: 21rem;
+    
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    /* overflow-x: none; */
+}
+ .all-post{
+    /* width: 100%;
+    height: 100%; */
+    position: sticky;
+    left: 0;
+    flex-shrink: 0;
+    object-fit: cover;
+    scroll-snap-align: start;
+
+}
+.white-line{
+    background-color: white;
+    position: relative;
+    top: -19px;
+    height: 20px;
+}
+.scroll-img{
+    
+    border-radius: 0.5rem;
+    width: 18rem;
+    height: 5rem;
+    
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    /* overflow-x: none; */
+}
+.scroll-img img{
+    width: 58px;
+    height: 60px;
+    /* position: relative;
+    top: -10px; */
+    position: sticky;
+    left: 0;
+    flex-shrink: 0;
+    object-fit: cover;
+    scroll-snap-align: start;
+
+}
+.position{
+    position: relative;
+    top: -35px;
+}
+#like{
+    background-color: white;
+}
+.fa-heart:active{
+        color: red;
+
+       }
+
+/* .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+} */
+.footer{
+    position:fixed;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid black;
+    border-bottom:none ;
+    border-left:none ;
+    border-right:none ;
+    top: -33px;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.footer img{
+    width: 35px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="alldiv animate__animated animate__slideInUp">
+       
+       <div class="alldiv-two">
+        <!-- <img src="mockup_samsung_galaxy_a12_2021_891372888b-removebg-preview.png" alt="" class="phone"> -->
+        <div class="old-menu">
+            
+            <div class="dropdown">
+                <button class="dropbtn"><h3>Instagram </h3></button>
+                <div class="dropdown-content">
+                <a href="#" class="peoply">Following &nbsp;<i class="fa-regular fa-user"></i> </a>
+                <a href="#" class="starlya">Favorites &nbsp;<i class="fa-regular fa-star"></i> </a>
+               
+                </div>
+              </div>
+            <div class="old-menu-top-left">
+                <i class="fa-regular fa-heart" id="fa-heart"></i>
+                <i class="fa-brands fa-facebook-messenger"></i>
+            </div>
+        </div>
+      <div class="scroll-img">
+        <div class="two-menu">
+            <img src="my-story.png" alt="">
+           
+            <img src="6-removebg-preview.png" alt="">
+           
+            <img src="5-removebg-preview.png" alt="">
+            <img src="3-removebg-preview.png" alt="">
+            <img src="4-removebg-preview.png" alt="">
+            <img src="8-removebg-preview.png" alt="">
+            <img src="7-removebg-preview.png" alt="">
+            <img src="9-removebg-preview.png" alt="">
+            <img src="10-removebg-preview.png" alt="">
+            <img src="11-removebg-preview.png" alt="">
+        </div>
+    </div>
+        <div class="two-menu-text">
+            <p>Your story</p>&nbsp;&nbsp;
+            <p>levi_x_pro</p>&nbsp;&nbsp;&nbsp;
+            <p>neymarjr</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <p>n1zamoff</p>&nbsp;&nbsp;&nbsp;
+            <p>mabrurdev</p>
+        </div>
+    
+        <br>
+        <!-- <hr> -->
+       <div class="position">
+        <div class="all-post">
+            <div class="post-one">
+
+                <div class="post-disp">
+                    <div class="post-disp-one">
+                        <p> <img src="user-1-removebg-preview.png" id="user-1" alt=""> webdevelopment657</p>
+                    </div>
+                    <div class="post-disp-two">
+                        <ion-icon name="ellipsis-vertical" class="point-one"></ion-icon>
+                    </div>
+                </div>
+    
+                
+                <img src="pic1.jpg" alt="" id="pic1">
+               <div class="icons">
+                <div class="icon-one">
+                    <i class="fa-solid fa-heart" id="like"></i>&nbsp;&nbsp;
+                    <i class="fa-regular fa-message"></i>&nbsp;&nbsp;
+                    <i class="fa-solid fa-paper-plane"></i>&nbsp;
+                </div>
+                <div class="icon-two">
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>
+               </div>
+            </div>
+            <div class="post-two">
+                
+                    <div class="post-disp">
+                        <div class="post-disp-one">
+                            <p> <img src="user-2-removebg-preview.png" id="user-1" alt=""> webdevelopment657</p>
+                        </div>
+                        <div class="post-disp-two">
+                            <ion-icon name="ellipsis-vertical" class="point-one"></ion-icon>
+                        </div>
+                    </div>
+        
+                    
+                    <video autoplay muted controls loop style=" width: 289px; height: 250px;" >
+                        <source src="vid1.mp4">
+                      </video>
+                   <div class="icons">
+                    <div class="icon-one">
+                        <i class="fa-regular fa-heart"></i>&nbsp;&nbsp;
+                        <i class="fa-regular fa-message"></i>&nbsp;&nbsp;
+                        <i class="fa-solid fa-paper-plane"></i>&nbsp;
+                    </div>
+                    <div class="icon-two">
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+                   </div>
+                
+            </div>
+            <div class="post-three">
+                <div class="post-disp">
+                    <div class="post-disp-one">
+                        <p> <img src="user-2-removebg-preview.png" id="user-1" alt=""> secretdeveloper2023</p>
+                    </div>
+                    <div class="post-disp-two">
+                        <ion-icon name="ellipsis-vertical" class="point-one"></ion-icon>
+                    </div>
+                </div>
+    
+                
+                <video autoplay muted loop style=" width: 289px; height: 250px;" >
+                    <source src="vid2.mp4">
+                  </video>
+               <div class="icons">
+                <div class="icon-one">
+                    <i class="fa-regular fa-heart"></i>&nbsp;&nbsp;
+                    <i class="fa-regular fa-message"></i>&nbsp;&nbsp;
+                    <i class="fa-solid fa-paper-plane"></i>&nbsp;
+                </div>
+                <div class="icon-two">
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>
+               </div>
+            </div>
+            <div class="post-four">
+                <div class="post-disp">
+                    <div class="post-disp-one">
+                        <p> <img src="user-1-removebg-preview.png" id="user-1" alt=""> webdevelopment657</p>
+                    </div>
+                    <div class="post-disp-two">
+                        <ion-icon name="ellipsis-vertical" class="point-one"></ion-icon>
+                    </div>
+                </div>
+    
+                
+                <img src="pic2.jpg" alt="" id="pic1">
+               <div class="icons">
+                <div class="icon-one">
+                    <i class="fa-regular fa-heart"></i>&nbsp;&nbsp;
+                    <i class="fa-regular fa-message"></i>&nbsp;&nbsp;
+                    <i class="fa-solid fa-paper-plane"></i>&nbsp;
+                </div>
+                <div class="icon-two">
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>
+               </div>
+            </div>
+            <div class="post-five">
+                <div class="post-disp">
+                    <div class="post-disp-one">
+                        <p> <img src="user-1-removebg-preview.png" id="user-1" alt=""> secretdeveloper2023</p>
+                    </div>
+                    <div class="post-disp-two">
+                        <ion-icon name="ellipsis-vertical" class="point-one"></ion-icon>
+                    </div>
+                </div>
+    
+                
+                <img src="pic3.jpg" alt="" id="pic1">
+               <div class="icons">
+                <div class="icon-one">
+                    <i class="fa-regular fa-heart"></i>&nbsp;&nbsp;
+                    <i class="fa-regular fa-message"></i>&nbsp;&nbsp;
+                    <i class="fa-solid fa-paper-plane"></i>&nbsp;
+                </div>
+                <div class="icon-two">
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>
+               </div>
+
+            </div>
+        </div>
+        <div class="white-line">
+            
+        </div>
+        <div class="footer" id="footer">
+           <a href="http://127.0.0.1:5500/index.html" style="color: black;"> <i class="fa-solid fa-house"></i></a>
+           <a href="http://127.0.0.1:5500/search.html" style="color: black;"> <i class="fa-solid fa-magnifying-glass"></i></a>
+            <i class="fa-regular fa-square-plus"></i>
+            <i class="fa-solid fa-clapperboard"></i>
+            <img src="photo_2023-10-28_19-52-15-removebg-preview.png" alt="">
+        </div>
+        
+       </div>
+       </div>
+    </div>
+</body>
+</html>
